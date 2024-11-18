@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityPaneTitle="Últimas Transações"
+    android:background="#A0A0A0"
+    tools:context=".sendMoneyActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="40dp"
+        android:accessibilityHeading="true"
+        android:fillViewport="true"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toTopOf="@+id/validationErrorTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContactos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_input_box"
+            android:backgroundTint="#CFCFCF"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/NotificacoesLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/balanceInput" />
+
+            <EditText
+                android:id="@+id/inputNomeAdd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:width="250dp"
+                android:background="@drawable/rounded_input_box"
+                android:editable="true"
+                android:elegantTextHeight="true"
+                android:ems="10"
+                android:hint="valor"
+                android:inputType="text"
+                android:lineHeight="50dp"
+                android:minWidth="250dp"
+                android:minHeight="50dp"
+                android:padding="@dimen/cardview_default_radius"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+            <TextView
+                android:id="@+id/piggyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="Descrição"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/balanceInput" />
+
+            <EditText
+                android:id="@+id/descricaoInput"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:width="250dp"
+                android:background="@drawable/rounded_input_box"
+                android:editable="true"
+                android:elegantTextHeight="true"
+                android:ems="10"
+                android:hint="descrição sobre a transferencia..."
+                android:inputType="text"
+                android:lineHeight="50dp"
+                android:minWidth="250dp"
+                android:minHeight="50dp"
+                android:padding="@dimen/cardview_default_radius"
+                android:paddingStart="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+            <Button
+                android:id="@+id/OnPiggy"
+                android:layout_width="170dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#448FA9"
+                android:clickable="true"
+                android:text="Enviar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="end"
+                app:iconSize="35dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <EditText
+        android:id="@+id/balanceInput"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:width="250dp"
+        android:background="@drawable/rounded_input_box"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="170.56€"
+        android:inputType="text"
+        android:lineHeight="50dp"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:padding="@dimen/cardview_default_radius"
+        android:paddingStart="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:isScrollContainer="false"
+        android:padding="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:pointerIcon="hand"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconGravity="start|end"
+        app:iconSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotaes" />
+
+    <TextView
+        android:id="@+id/validationErrorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="75dp"
+        android:width="250dp"
+        android:text="Dados Invalidos ou Incorretos"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

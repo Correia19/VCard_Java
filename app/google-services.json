@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "456745675232",
+    "firebase_url": "https://vcard-app-29363-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "vcard-app-29363",
+    "storage_bucket": "vcard-app-29363.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456745675232:android:b744864159576d2e202385",
+        "android_client_info": {
+          "package_name": "com.example.vcardapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEXh6c85rQsq1HouwjEd6VsqtN_VbzER8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

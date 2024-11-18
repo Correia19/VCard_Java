@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="250dp" /> <!-- Define o raio dos cantos -->
+            <solid android:color="#FFFFFF" /> <!-- Define a cor de fundo -->
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="250dp" /> <!-- Define o raio dos cantos -->
+            <solid android:color="#CCCCCC" /> <!-- Cor de fundo quando pressionado -->
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="250dp" /> <!-- Define o raio dos cantos -->
+            <solid android:color="#A0A0A0" /> <!-- Cor de fundo quando desativado -->
+        </shape>
+    </item>
+</selector>
